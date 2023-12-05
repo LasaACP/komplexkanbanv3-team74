@@ -8,4 +8,7 @@ class Complex{
     Complex();
     Complex(double r, double i = 0);
 
+  Complex operator* (const Complex& c){
+    
+  };
 };
