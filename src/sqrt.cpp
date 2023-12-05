@@ -3,8 +3,9 @@
 #include <cmath>
 #include 
 
-Complex sqrt(const Complex c) {
-  Complex resulted=pow(c,0.5);
+
+complex sqrt(complex c) {
+  complex resulted=pow(c,0.5);
   return resulted;
 }
 //test
