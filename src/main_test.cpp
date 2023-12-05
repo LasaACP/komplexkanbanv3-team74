@@ -38,6 +38,13 @@ TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
   REQUIRE(Factorial(3) == 6);
   REQUIRE(Factorial(4) == 24);
   REQUIRE(Factorial(5) == 1);
+  //
+  
+}
+TEST_CASE("sqrt test") {
+  REQUIRE(sqrt(4)==2);
+  REQUIRE(sqrt(9)==3);
+  REQUIRE(sqrt(16)==4);
 }
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
