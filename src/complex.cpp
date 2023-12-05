@@ -1,12 +1,15 @@
-class Complex{
+class complex{
 
   private:
     double real;
     double imaginary;
 
   public:
-    Complex(){real = 0; imaginary = 0;}
-    Complex(double r, double i = 0) {real = r; imaginary = i;}
+    complex(){real = 0; imaginary = 0;}
+    complex(double r, double i = 0) {real = r; imaginary = i;}
 
 
+  complex operator* (const complex& c){
+
+  };
 };
