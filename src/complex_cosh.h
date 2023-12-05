@@ -1,0 +1,1 @@
+complex cosh(const complex);
