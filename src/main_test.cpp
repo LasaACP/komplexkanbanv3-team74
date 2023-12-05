@@ -48,7 +48,9 @@ TEST_CASE("sqrt test") {
 }
 
 TEST_CASE("real test") {
-  REQUIRE(real(Complex(3,5))==3);
+  REQUIRE(real(complex(3,5))==3);
+  REQUIRE(real(complex(2,1))==2);
+  REQURIE(real(complex(0,5))==0);
 }
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
