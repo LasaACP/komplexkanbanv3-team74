@@ -47,5 +47,13 @@ TEST_CASE("sqrt test") {
   REQUIRE(sqrt(16)==4);
 }
 
+<<<<<<< HEAD
+=======
+TEST_CASE("real test") {
+  REQUIRE(real(complex(3,5))==3);
+  REQUIRE(real(complex(2,1))==2);
+  REQURIE(real(complex(0,5))==0);
+}
+>>>>>>> refs/remotes/origin/main
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
