@@ -11,6 +11,7 @@
 #include <iostream>
 #include "../tests/catch_amalgamated.hpp"
 #include "../src/fac.h"
+#include "complex.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -41,18 +42,29 @@ TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
   //
   
 }
+
+
+
+
 TEST_CASE("sqrt test") {
   REQUIRE(sqrt(4)==2);
   REQUIRE(sqrt(9)==3);
   REQUIRE(sqrt(16)==4);
 }
 
-
 TEST_CASE("real test") {
   REQUIRE(real(complex(3,5))==3);
   REQUIRE(real(complex(2,1))==2);
   REQURIE(real(complex(0,5))==0);
 }
+
+
+TEST_CASE("conj test") {
+  REQUIRE(conj(complex(3,5))==complex(3,-5));
+  REQUIRE(conj(complex(5,-6))==complex(5,6));
+  REQUIRE(conj(complex(-2,8))==complex(2,-8));
+}
+
 
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
