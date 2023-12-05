@@ -47,13 +47,15 @@ TEST_CASE("sqrt test") {
   REQUIRE(sqrt(16)==4);
 }
 
-<<<<<<< HEAD
-=======
+
 TEST_CASE("real test") {
   REQUIRE(real(complex(3,5))==3);
   REQUIRE(real(complex(2,1))==2);
   REQURIE(real(complex(0,5))==0);
 }
->>>>>>> refs/remotes/origin/main
+TEST_CASE("addition assign test") {
+  REQUIRE(complex(3,4) += complex(1,2) == complex(4,6));
+}
+
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
