@@ -5,8 +5,9 @@ class Complex{
     double imaginary;
 
   public:
-    Complex();
-    Complex(double r, double i = 0);
+    Complex(){real = 0; imaginary = 0;}
+    Complex(double r, double i = 0) {real = r; imaginary = i;}
+
 
   Complex operator* (const Complex& c){
     
