@@ -10,6 +10,12 @@ class complex{
 
 
   complex operator* (const complex& c){
-    
-  };
+    complex temp;
+    double tempReal = (real*c.real) - (imaginary * c.imaginary);
+    double tempImaginary = (real*c.imaginary) + (imaginary*c.real);
+    temp.real = tempReal;
+    temp.imaginary = tempImaginary;
+    return temp;
+  }
+
 };
