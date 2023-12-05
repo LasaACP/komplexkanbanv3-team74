@@ -11,5 +11,5 @@ class complex{
 
   complex operator* (const complex& c){
 
-  };
+  }
 };
