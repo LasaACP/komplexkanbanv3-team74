@@ -1,1 +1,1 @@
-double real(Complex c);
+double real(complex c);
