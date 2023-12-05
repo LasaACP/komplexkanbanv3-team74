@@ -1,1 +1,1 @@
-Complex sqrt(Complex c);
+complex sqrt(complex c);
