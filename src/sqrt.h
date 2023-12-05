@@ -1,1 +1,1 @@
-Complex sqrt(Complex c);
+Complex sqrt(const Complex c);

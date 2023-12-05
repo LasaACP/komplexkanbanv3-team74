@@ -46,5 +46,6 @@ TEST_CASE("sqrt test") {
   REQUIRE(sqrt(9)==3);
   REQUIRE(sqrt(16)==4);
 }
+
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
