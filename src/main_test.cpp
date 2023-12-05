@@ -9,7 +9,7 @@
 //#define CATCH_CONFIG_RUNNER
 //#define CATCH_AMALGAMATED_CUSTOM_MAIN
 #include <iostream>
-#include "catch_amalgamated.hpp"
+#include "../tests/catch_amalgamated.hpp"
 #include "../src/fac.h"
 using namespace std;
 
