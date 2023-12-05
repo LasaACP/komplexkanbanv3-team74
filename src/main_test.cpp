@@ -9,7 +9,7 @@
 //#define CATCH_CONFIG_RUNNER
 //#define CATCH_AMALGAMATED_CUSTOM_MAIN
 #include <iostream>
-#include "catch_amalgamated.hpp"
+#include "../tests/catch_amalgamated.hpp"
 #include "../src/fac.h"
 using namespace std;
 
@@ -39,5 +39,7 @@ TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
   REQUIRE(Factorial(4) == 24);
   REQUIRE(Factorial(5) == 1);
 }
+
+
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
