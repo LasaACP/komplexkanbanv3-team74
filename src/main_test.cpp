@@ -14,7 +14,7 @@
 #include "complex.h"
 #include "conj.h"
 #include "real.h"
-#include "sqrt.h"
+#include "complex_sqrt.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -50,9 +50,9 @@ TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
 
 
 TEST_CASE("sqrt test") {
-  REQUIRE(sqrt(4)==2);
-  REQUIRE(sqrt(9)==3);
-  REQUIRE(sqrt(16)==4);
+  REQUIRE(complex_sqrt(complex(3,4)).real==2);
+  REQUIRE(complex_sqrt(complex(3,4)).imaginary==1);
+  
 }
 
 
