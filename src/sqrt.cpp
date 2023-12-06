@@ -1,11 +1,9 @@
-#include "sqrt.h"
 #include <iostream>
 #include <cmath>
-#include "../src/complex.cpp"
+#include "sqrt.h"
+#include "complex.h"
 
 
 complex sqrt(complex c) {
-  complex resulted=pow(c,0.5);
-  return resulted;
+  return c;
 }
-//test

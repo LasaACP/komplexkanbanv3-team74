@@ -1,3 +1,3 @@
-#include "complex.h"
+class complex;
 
-complex complex::conj(const complex c);
+complex conj(const complex c);

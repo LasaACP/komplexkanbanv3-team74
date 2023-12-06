@@ -1,4 +1,5 @@
 #include "complex_cosh.h"
+#include "complex.h"
 
 complex cosh(complex z){
   complex z1 = z;

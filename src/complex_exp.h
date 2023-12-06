@@ -1,2 +1,3 @@
-#include "../src/complex.cpp"
+class complex;
+
 complex exp(const complex);

@@ -1,4 +1,3 @@
-#include "../src/complex.cpp"
+class complex;
 
 complex sqrt(complex c);
-
