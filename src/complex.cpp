@@ -11,3 +11,7 @@ complex complex::operator* (const complex& c) {
     temp.imaginary = tempImaginary;
     return temp;
 }
+
+bool complex::operator==(const complex& c) const {
+  return (real == c.real && imaginary == c.imaginary);
+}
