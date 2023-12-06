@@ -20,6 +20,7 @@
 #include "complex_atan.h"
 #include "imag.h"
 #include "pow.h"
+#include "norm.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -121,6 +122,13 @@ TEST_CASE("pow test") {
   REQUIRE(pow(complex(1,2), 2)==complex(-3,4));
   REQUIRE(pow(complex(-3,4), 0.5)==complex(1,2));
   REQUIRE(pow(complex(1,2), complex(2,0))==complex(-3,4));
+}
+
+TEST_CASE("norm test") {
+  REQUIRE(norm(complex(2,3))==sqrt(13));   
+  REQUIRE(norm(complex(6,8))==10);
+  REQUIRE(norm(complex(7,7))==sqrt(98));   
+  REQUIRE(norm(complex(12,16))==20);
 }
 
 // */
