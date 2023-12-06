@@ -15,6 +15,7 @@
 #include "conj.h"
 #include "real.h"
 #include "complex_sqrt.h"
+#include "complex_acos.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -87,6 +88,11 @@ TEST_CASE("conj test") {
   REQUIRE(conj(complex(3,5))==complex(3,-5));
   REQUIRE(conj(complex(5,-6))==complex(5,6));
   REQUIRE(conj(complex(-2,8))==complex(-2,-8));
+}
+
+TEST_CASE("acos test") {
+  REQUIRE(complex_acos(complex(-2,2)).real==2.325);
+  REQUIRE(complex_acos(complex(-2,2)).imaginary==-1.734);
 }
 
 
