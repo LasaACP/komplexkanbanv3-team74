@@ -131,5 +131,12 @@ TEST_CASE("norm test") {
   REQUIRE(norm(complex(12,16))==20);
 }
 
+TEST_CASE("equality and inequality tests") {
+  REQUIRE(complex(3,4)==complex(3,4));
+  REQUIRE(complex(-10,14)==complex(-10,14));
+  REQUIRE(complex(-3,5)!=complex(-3,4));
+  REQUIRE(complex(4,-4)!=complex(3,-4));
+}
+
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN

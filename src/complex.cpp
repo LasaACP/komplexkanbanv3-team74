@@ -15,3 +15,7 @@ complex complex::operator* (const complex& c) {
 bool complex::operator==(const complex& c) const {
   return (real == c.real && imaginary == c.imaginary);
 }
+
+bool complex::operator!=(const complex& c) const {
+  return !(*this == c);
+}

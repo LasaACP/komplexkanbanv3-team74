@@ -8,4 +8,5 @@ class complex{
 
   complex operator* (const complex& c);
   bool operator==(const complex& c) const;
+  bool operator!=(const complex& c) const;
 };
