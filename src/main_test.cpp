@@ -16,6 +16,8 @@
 #include "real.h"
 #include "complex_sqrt.h"
 #include "complex_acos.h"
+#include "complex_asin.h"
+#include "complex_atan.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -93,6 +95,16 @@ TEST_CASE("conj test") {
 TEST_CASE("acos test") {
   REQUIRE(complex_acos(complex(-2,2)).real==2.325);
   REQUIRE(complex_acos(complex(-2,2)).imaginary==-1.734);
+}
+
+TEST_CASE("asin test") {
+  REQUIRE(complex_asin(complex(-2,2)).real==-0.754);
+  REQUIRE(complex_asin(complex(-2,2)).imaginary==1.734);
+}
+
+TEST_CASE("atan test") {
+  REQUIRE(complex_atan(complex(-2,2)).real==-1.311);
+  REQUIRE(complex_atan(complex(-2,2)).imaginary==0.239);
 }
 
 
