@@ -9,6 +9,7 @@
 //#define CATCH_CONFIG_RUNNER
 //#define CATCH_AMALGAMATED_CUSTOM_MAIN
 #include <iostream>
+#include <cmath>
 #include "../tests/catch_amalgamated.hpp"
 #include "../src/fac.h"
 #include "complex.h"
@@ -18,6 +19,10 @@
 #include "complex_acos.h"
 #include "complex_asin.h"
 #include "complex_atan.h"
+#include "imag.h"
+#include "pow.h"
+#include "norm.h"
+#include "arg.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -107,8 +112,41 @@ TEST_CASE("atan test") {
   REQUIRE(complex_atan(complex(-2,2)).imaginary==0.239);
 }
 
+TEST_CASE("imag test") {
+  REQUIRE(imag(complex(1, 2))==2);
+  REQUIRE(imag(complex(1, -6))==-6);
+  REQUIRE(imag(complex(1, 123))==123);
+  REQUIRE(imag(complex(1, -14))==-14);
+}
 
+TEST_CASE("pow test") {
+  REQUIRE(pow(2.0, complex(3,0))==complex(8,0));
+  REQUIRE(pow(complex(1,2), 2)==complex(-3,4));
+  REQUIRE(pow(complex(-3,4), 0.5)==complex(1,2));
+  REQUIRE(pow(complex(1,2), complex(2,0))==complex(-3,4));
+}
 
+TEST_CASE("norm test") {
+  REQUIRE(norm(complex(2,3))==sqrt(13));   
+  REQUIRE(norm(complex(6,8))==10);
+  REQUIRE(norm(complex(7,7))==sqrt(98));   
+  REQUIRE(norm(complex(12,16))==20);
+}
+
+TEST_CASE("equality and inequality tests") {
+  REQUIRE(complex(3,4)==complex(3,4));
+  REQUIRE(complex(-10,14)==complex(-10,14));
+  REQUIRE(complex(-3,5)!=complex(-3,4));
+  REQUIRE(complex(4,-4)!=complex(3,-4));
+}
+
+TEST_CASE("arg test") {
+  double pi = 4*atan(1);
+  REQUIRE(arg(complex(1,1))==pi/4);  
+  REQUIRE(arg(complex(1,sqrt(3)))==pi/3);
+  REQUIRE(arg(complex(0,1))==pi/2);
+  REQUIRE(arg(complex(1,0))==0);
+}
 
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
