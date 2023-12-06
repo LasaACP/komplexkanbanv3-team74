@@ -19,6 +19,7 @@
 #include "complex_asin.h"
 #include "complex_atan.h"
 #include "imag.h"
+#include "pow.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -115,6 +116,12 @@ TEST_CASE("imag test") {
   REQUIRE(imag(complex(1, -14))==-14);
 }
 
+TEST_CASE("pow test") {
+  REQUIRE(pow(2.0, complex(3,0))==complex(8,0));
+  REQUIRE(pow(complex(1,2), 2)==complex(-3,4));
+  REQUIRE(pow(complex(-3,4), 0.5)==complex(1,2));
+  REQUIRE(pow(complex(1,2), complex(2,0))==complex(-3,4));
+}
 
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
