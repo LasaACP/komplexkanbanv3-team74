@@ -18,6 +18,7 @@
 #include "complex_acos.h"
 #include "complex_asin.h"
 #include "complex_atan.h"
+#include "imag.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -107,7 +108,12 @@ TEST_CASE("atan test") {
   REQUIRE(complex_atan(complex(-2,2)).imaginary==0.239);
 }
 
-
+TEST_CASE("imag test") {
+  REQUIRE(imag(complex(1, 2))==2);
+  REQUIRE(imag(complex(1, -6))==-6);
+  REQUIRE(imag(complex(1, 123))==123);
+  REQUIRE(imag(complex(1, -14))==-14);
+}
 
 
 // */
