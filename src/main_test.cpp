@@ -9,6 +9,7 @@
 //#define CATCH_CONFIG_RUNNER
 //#define CATCH_AMALGAMATED_CUSTOM_MAIN
 #include <iostream>
+#include <cmath>
 #include "../tests/catch_amalgamated.hpp"
 #include "../src/fac.h"
 #include "complex.h"
@@ -21,6 +22,7 @@
 #include "imag.h"
 #include "pow.h"
 #include "norm.h"
+#include "arg.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -136,6 +138,14 @@ TEST_CASE("equality and inequality tests") {
   REQUIRE(complex(-10,14)==complex(-10,14));
   REQUIRE(complex(-3,5)!=complex(-3,4));
   REQUIRE(complex(4,-4)!=complex(3,-4));
+}
+
+TEST_CASE("arg test") {
+  double pi = 4*atan(1);
+  REQUIRE(arg(complex(1,1))==pi/4);  
+  REQUIRE(arg(complex(1,sqrt(3)))==pi/3);
+  REQUIRE(arg(complex(0,1))==pi/2);
+  REQUIRE(arg(complex(1,0))==0);
 }
 
 // */
