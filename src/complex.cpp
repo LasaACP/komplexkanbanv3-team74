@@ -25,7 +25,7 @@ public:
   complex operator-(complex a) {
     double b = real - a.real;
     double c = imaginary - a.imaginary;
-    complex *e = new complex(b, c);
+    complex *eg = new complex(b, c);
     return *e;
   }
 
