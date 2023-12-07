@@ -1,5 +1,6 @@
 #include "conj.h"
+#include "complex.h"
 
-complex complex::conj(const complex c) {
+complex conj(complex c) {
   return complex(c.real, -c.imaginary);
 }

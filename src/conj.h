@@ -1,1 +1,3 @@
-complex complex::conj(const complex c);
+class complex;
+
+complex conj(const complex c);

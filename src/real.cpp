@@ -1,6 +1,6 @@
 #include "real.h"
-#include <iostream>
+#include "complex.h"
 
-double real(Complex* c) {
-  return c->real;
+double real(complex c) {
+  return c.real;
 }

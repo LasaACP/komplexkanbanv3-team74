@@ -1,1 +1,3 @@
-double real(Complex c);
+class complex;
+
+double real(complex c);

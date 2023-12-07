@@ -1,13 +1,12 @@
 class complex{
 
-  private:
+  public:
     double real;
     double imaginary;
-
-  public:
     complex();
     complex(double r, double i = 0);
 
   complex operator* (const complex& c);
-
+  bool operator==(const complex& c) const;
+  bool operator!=(const complex& c) const;
 };
