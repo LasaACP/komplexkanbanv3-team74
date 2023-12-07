@@ -7,7 +7,7 @@ complex pow(double b, const complex exp) {
 
 complex pow(const complex b, int exp) {
   if (exp == 0) {
-    return 1;
+    return complex(1,0);
   } else {
     return pow(b, exp - 1) * b;
   }

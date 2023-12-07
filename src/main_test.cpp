@@ -23,6 +23,7 @@
 #include "pow.h"
 #include "norm.h"
 #include "arg.h"
+#include "inserter.h"
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
@@ -163,6 +164,14 @@ TEST_CASE("arg test") {
   REQUIRE(arg(complex(1,sqrt(3)))==pi/3);
   REQUIRE(arg(complex(0,1))==pi/2);
   REQUIRE(arg(complex(1,0))==0);
+}
+
+TEST_CASE("inserter test") {
+  stringstream o;
+  o << "2+3i";
+  stringstream o2;
+  o2 << complex(2,3);
+  REQUIRE(o.str() == o2.str());
 }
 
 // */
