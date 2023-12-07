@@ -1,3 +1,3 @@
 class complex;
 
-complex sqrt(complex c);
+complex sqrt(const complex c);

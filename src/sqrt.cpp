@@ -7,6 +7,6 @@
      complex resulted=pow(c,0.5);
     return resulted;
   }*/
-complex sqrt(complex c) {
+complex sqrt(const complex c) {
   return c;
 }
