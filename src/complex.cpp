@@ -1,7 +1,7 @@
 #include "complex.h"
 
 complex::complex(){real = 0; imaginary = 0;}
-complex::complex(double r, double i = 0) {real = r; imaginary = i;}
+complex::complex(double r, double i) {real = r; imaginary = i;}
 
 complex complex::operator* (const complex& c) {
     complex temp;
@@ -39,8 +39,7 @@ complex complex::operator+(const complex& c) {
   return *e; */
 }
 
-complex complex::operator =(const complex c){
-  return c;
+void complex::operator= (const complex& c){
   /* real = a.real;
     imaginary = a.imaginary;
     return *this;
