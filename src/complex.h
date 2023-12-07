@@ -13,5 +13,8 @@ class complex{
   complex operator+= (const complex& c);
   complex operator-= (const complex& c);
   complex operator/(const complex& c);
+  complex operator+(const complex& c);
+  complex operator =(const complex& c);
+  complex operator-(const complex& c);
 
 };
