@@ -62,6 +62,15 @@ bool complex::operator==(const complex& c) const {
 bool complex::operator!=(const complex& c) const {
   return !(*this == c);
 }
+
+complex complex::operator+= (const complex& c) {
+  return c;
+}
+complex complex::operator-= (const complex& c) {
+  return c;
+}
+
 complex complex::operator/ (const complex& c) {
   return c;
 }
+

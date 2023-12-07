@@ -9,5 +9,9 @@ class complex{
   complex operator* (const complex& c);
   bool operator==(const complex& c) const;
   bool operator!=(const complex& c) const;
+
+  complex operator+= (const complex& c);
+  complex operator-= (const complex& c);
   complex operator/(const complex& c);
+
 };
