@@ -72,13 +72,10 @@ TEST_CASE("real test") {
 }
 
 TEST_CASE("addition assign test") {
-  // these tests will create an error until a stub is created so i just commented them out for now - justin w
-  /*
-  REQUIRE(complex(3,4) += complex(1,2) == complex(4,6));
-  REQUIRE(complex(0,10) += complex(3,1) == complex(3,11));
-  REQUIRE(complex(-5,-5) += complex(10,0) == complex(5,-5));
-  REQUIRE(complex(34,54) += complex(91,49) == complex(125,103));
-  */
+  REQUIRE((complex(3,4) += complex(1,2)) == complex(4,6));
+  REQUIRE((complex(0,10) += complex(3,1)) == complex(3,11));
+  REQUIRE((complex(-5,-5) += complex(10,0)) == complex(5,-5));
+  REQUIRE((complex(34,54) += complex(91,49)) == complex(125,103));
 }
 
 
@@ -120,8 +117,8 @@ TEST_CASE("imag test") {
 }
 
 TEST_CASE("pow test") {
-  REQUIRE(pow(2.0, complex(3,0))==complex(8,0));
   REQUIRE(pow(complex(1,2), 2)==complex(-3,4));
+  REQUIRE(pow(2.0, complex(3,0))==complex(8,0));
   REQUIRE(pow(complex(-3,4), 0.5)==complex(1,2));
   REQUIRE(pow(complex(1,2), complex(2,0))==complex(-3,4));
 }
