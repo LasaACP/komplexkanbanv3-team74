@@ -73,4 +73,3 @@ complex complex::operator-= (const complex& c) {
 complex complex::operator/ (const complex& c) {
   return c;
 }
-
