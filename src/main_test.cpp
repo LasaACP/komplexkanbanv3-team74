@@ -58,8 +58,8 @@ TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
 
 
 TEST_CASE("sqrt test") {
-  REQUIRE(complex_sqrt(complex(3,4)).real==2);
-  REQUIRE(complex_sqrt(complex(3,4)).imaginary==1);
+  REQUIRE(sqrt(complex(3,4)).real==2);
+  REQUIRE(sqrt(complex(3,4)).imaginary==1);
   
 }
 
@@ -98,18 +98,18 @@ TEST_CASE("conj test") {
 }
 
 TEST_CASE("acos test") {
-  REQUIRE(complex_acos(complex(-2,2)).real==2.325);
-  REQUIRE(complex_acos(complex(-2,2)).imaginary==-1.734);
+  REQUIRE(acos(complex(-2,2)).real==2.325);
+  REQUIRE(acos(complex(-2,2)).imaginary==-1.734);
 }
 
 TEST_CASE("asin test") {
-  REQUIRE(complex_asin(complex(-2,2)).real==-0.754);
-  REQUIRE(complex_asin(complex(-2,2)).imaginary==1.734);
+  REQUIRE(asin(complex(-2,2)).real==-0.754);
+  REQUIRE(asin(complex(-2,2)).imaginary==1.734);
 }
 
 TEST_CASE("atan test") {
-  REQUIRE(complex_atan(complex(-2,2)).real==-1.311);
-  REQUIRE(complex_atan(complex(-2,2)).imaginary==0.239);
+  REQUIRE(atan(complex(-2,2)).real==-1.311);
+  REQUIRE(atan(complex(-2,2)).imaginary==0.239);
 }
 
 TEST_CASE("imag test") {
