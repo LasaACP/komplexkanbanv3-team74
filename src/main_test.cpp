@@ -78,12 +78,32 @@ TEST_CASE("addition assign test") {
   REQUIRE((complex(34,54) += complex(91,49)) == complex(125,103));
 }
 
+TEST_CASE("subtraction assign test") {
+  REQUIRE((complex(3,4) -= complex(1,2)) == complex(1,2));
+  REQUIRE((complex(0,10) -= complex(3,1)) == complex(-3,9));
+  REQUIRE((complex(-5,-5) -= complex(10,0)) == complex(-15,-5));
+  REQUIRE((complex(4,6) -= complex(-6,-4)) == complex(10,10));
+}
+
+TEST_CASE("mulitplication assign test") {
+  REQUIRE((complex(3,5)*=complex(2,1)) == complex(1,13));
+  REQUIRE((complex(2,-10)*=complex(-6,8)) == complex(68,76));
+  REQUIRE((complex(-9,-6)*=complex(3,-4)) == complex(-51,18));
+  REQUIRE((complex(7,2) *= complex(3,-7)) == complex(35,-43));
+}
+
+TEST_CASE("division assign test") {
+  REQUIRE((complex(1,13) /= complex(3,5)) == complex(2,1));
+  REQUIRE((complex(68,76) /= complex(-6,8)) == complex(2,-10));
+  REQUIRE((complex(-51,18) /= complex(-9,-6)) == complex(-51,-18));
+  REQUIRE((complex(35,-43) /= complex(7,2)) == complex(3,-6));
+}
 
 TEST_CASE("multiplication operator") {
-  REQUIRE(complex(3,5)*complex(2,1) == complex(1,13));
-  REQUIRE(complex(2,-10)*complex(-6,8) == complex(68,76));
-  REQUIRE(complex(-9,-6)*complex(3,-4) == complex(-51,18));
-  REQUIRE(complex(7,2)*complex(3,-7) == complex(35,-43));
+  REQUIRE((complex(3,5)*complex(2,1)) == complex(1,13));
+  REQUIRE((complex(2,-10)*complex(-6,8)) == complex(68,76));
+  REQUIRE((complex(-9,-6)*complex(3,-4)) == complex(-51,18));
+  REQUIRE((complex(7,2)*complex(3,-7)) == complex(35,-43));
   
 }
 

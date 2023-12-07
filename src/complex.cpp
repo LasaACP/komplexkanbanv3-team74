@@ -27,11 +27,17 @@ complex complex::operator-= (const complex& c) {
   return c;
 }
 
+complex complex::operator*=(const complex& c) {
+  return c;
+}
+complex complex::operator/=(const complex& c) {
+  return c;
+}
+
 complex complex::operator/ (const complex& c) {
   return c;
 }
-<<<<<<< HEAD
-=======
+
 
 complex complex::operator+(const complex& c) {
   return c;
@@ -55,5 +61,3 @@ complex complex::operator-(const complex& c) {
     complex *eg = new complex(b, c);
     return *e; */
 }
-
->>>>>>> refs/remotes/origin/main
