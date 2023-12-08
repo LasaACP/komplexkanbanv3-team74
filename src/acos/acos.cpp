@@ -3,6 +3,6 @@
 #include "acos.h"
 #include "../complex.h"
 
-complex acos(complex c) {
+complex acos(const complex c) {
   return c;
 }

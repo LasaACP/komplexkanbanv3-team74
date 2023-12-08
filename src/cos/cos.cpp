@@ -1,7 +1,6 @@
 #include "cos.h"
 #include "../complex.h"
 
-complex cos(complex z){
-  complex z1 = z;
+complex cos(const complex z){
   return z;
 }

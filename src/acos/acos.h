@@ -1,3 +1,3 @@
 class complex;
 
-complex acos(complex c);
+complex acos(const complex c);

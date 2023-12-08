@@ -1,3 +1,3 @@
 class complex;
 
-double real(complex c);
+double real(const complex& c);

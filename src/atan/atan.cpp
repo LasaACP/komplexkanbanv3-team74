@@ -3,6 +3,6 @@
 #include "atan.h"
 #include "../complex.h"
 
-complex atan(complex c) {
+complex atan(const complex c) {
   return c;
 }

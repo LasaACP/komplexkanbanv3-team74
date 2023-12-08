@@ -12,7 +12,6 @@
 #include <cmath>
 #include "../tests/catch_amalgamated.hpp"
 #include "complex.h"
-#include "fac/fac.h"
 #include "conj/conj.h"
 #include "real/real.h"
 #include "sqrt.h"

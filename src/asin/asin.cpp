@@ -3,6 +3,6 @@
 #include "asin.h"
 #include "../complex.h"
 
-complex asin(complex c) {
+complex asin(const complex c) {
   return c;
 }

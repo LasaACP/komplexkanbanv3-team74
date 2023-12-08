@@ -1,3 +1,3 @@
 class complex;
 
-complex atan(complex c);
+complex atan(const complex c);

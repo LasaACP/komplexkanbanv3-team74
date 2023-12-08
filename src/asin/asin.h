@@ -1,3 +1,3 @@
 class complex;
 
-complex asin(complex c);
+complex asin(const complex c);
