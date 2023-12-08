@@ -11,19 +11,26 @@
 #include <iostream>
 #include <cmath>
 #include "../tests/catch_amalgamated.hpp"
-#include "../src/fac.h"
 #include "complex.h"
-#include "conj.h"
-#include "real.h"
+#include "fac/fac.h"
+#include "conj/conj.h"
+#include "real/real.h"
 #include "sqrt.h"
-#include "acos.h"
-#include "asin.h"
-#include "atan.h"
-#include "imag.h"
-#include "pow.h"
-#include "norm.h"
-#include "arg.h"
-#include "inserter.h"
+#include "acos/acos.h"
+#include "asin/asin.h"
+#include "atan/atan.h"
+#include "imag/imag.h"
+#include "pow/pow.h"
+#include "norm/norm.h"
+#include "arg/arg.h"
+#include "inserter/inserter.h"
+#include "cos/cos.h"
+#include "cosh/cosh.h"
+#include "exp/exp.h"
+#include "log/log.h"
+#include "log10/log10.h"
+#include "sin/sin.h"
+
 using namespace std;
 
 #ifdef CATCH_AMALGAMATED_CUSTOM_MAIN
