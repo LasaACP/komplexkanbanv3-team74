@@ -8,4 +8,3 @@
 complex abs(const complex c) {
   return complex(sqrt(pow(c.real,2.0)), sqrt(pow(c.imaginary,2.0)));
 }
-}
