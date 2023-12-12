@@ -38,7 +38,6 @@ complex complex::operator/ (const complex& c) {
   return c;
 }
 
-
 complex complex::operator+(const complex& c)const {
   double r = c.real + real;
   double i = c.imaginary + imaginary;
