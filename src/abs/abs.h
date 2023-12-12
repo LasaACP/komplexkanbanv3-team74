@@ -1,3 +1,3 @@
 class complex;
 
-complex abs(const complex c);
+double abs(const complex c);

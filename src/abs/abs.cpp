@@ -5,6 +5,6 @@
 
 #include <cmath>
 
-complex abs(const complex c) {
-  return complex(sqrt(pow(c.real,2.0)), sqrt(pow(c.imaginary,2.0)));
+double abs(const complex c) {
+  return sqrt(c.real*c.real + c.imaginary*c.imaginary);
 }
