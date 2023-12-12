@@ -180,5 +180,11 @@ TEST_CASE("inserter test") {
   REQUIRE(o.str() == o2.str());
 }
 
+TEST_CASE("divison operator"){
+  REQUIRE((complex(1,2)/complex(2,1))==complex(0.8,0.6));
+  REQUIRE((complex(1,2)/complex(2,-1))==complex(0,1));
+  REQUIRE((complex(1,2)/complex(-2,1))==complex(0,-1));
+}
+
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
