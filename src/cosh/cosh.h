@@ -1,3 +1,3 @@
 class complex;
 
-complex cosh(const complex);
+complex cosh(const complex c);

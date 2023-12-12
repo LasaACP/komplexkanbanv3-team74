@@ -1,3 +1,3 @@
 class complex;
 
-complex exp(const complex);
+complex exp(const complex c);

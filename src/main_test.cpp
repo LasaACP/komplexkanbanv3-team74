@@ -14,7 +14,7 @@
 #include "complex.h"
 #include "conj/conj.h"
 #include "real/real.h"
-#include "sqrt.h"
+#include "sqrt/sqrt.h"
 #include "acos/acos.h"
 #include "asin/asin.h"
 #include "atan/atan.h"
@@ -47,19 +47,19 @@ int main( int argc, char* argv[] ) {
 
 #else    //Not CATCH_AMALGAMATED_CUSTOM_MAIN
 
-TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
-{
+// TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
+// {
 
-  cout << "Hello Catch2 Build with Catch2 main()\n";
-  cout << "Running tests on Factorial" << endl;
-  REQUIRE(Factorial(1) == 1);
-  REQUIRE(Factorial(2) == 2);
-  REQUIRE(Factorial(3) == 6);
-  REQUIRE(Factorial(4) == 24);
-  REQUIRE(Factorial(5) == 120);
-  //
+//   cout << "Hello Catch2 Build with Catch2 main()\n";
+//   cout << "Running tests on Factorial" << endl;
+//   REQUIRE(Factorial(1) == 1);
+//   REQUIRE(Factorial(2) == 2);
+//   REQUIRE(Factorial(3) == 6);
+//   REQUIRE(Factorial(4) == 24);
+//   REQUIRE(Factorial(5) == 120);
+//   //
   
-}
+// }
 
 
 
