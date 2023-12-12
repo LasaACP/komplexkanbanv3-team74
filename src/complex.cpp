@@ -40,11 +40,10 @@ complex complex::operator/ (const complex& c) {
 
 
 complex complex::operator+(const complex& c) {
-  return c;
-  /* double c = a.real + real;
-  double d = a.imaginary + imaginary;
-  complex *e = new complex(c, d);
-  return *e; */
+  double r = c.real + real;
+  double i = c.imaginary + imaginary;
+  complex e = complex(r, i);
+  return e;
 }
 
 void complex::operator= (const complex& c){
