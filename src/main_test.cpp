@@ -70,6 +70,9 @@ TEST_CASE("sqrt test") {
   
 }
 
+TEST_CASE("abs value test") {
+  
+}
 
 TEST_CASE("real test") {
   REQUIRE(real(complex(3,5))==3);
