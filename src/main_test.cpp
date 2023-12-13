@@ -194,7 +194,17 @@ TEST_CASE("equal operator"){
 }
 
 TEST_CASE("subtraction operator"){
-  
+  REQUIRE((complex(3,4) - complex(1,2)) == complex(2,2));
+  REQUIRE((complex(5,6) - complex(1,-2)) == complex(4,8));
+}
+
+TEST_CASE("addition opertor"){
+  REQUIRE((complex(3,4) + complex(1,2)) == complex(4,6));
+  REQUIRE((complex(5,6) + complex(1,-2)) == complex(6,4));
+}
+
+TEST_CASE("cos test"){
+  REQUIRE();
 }
 // */
 #endif // ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
