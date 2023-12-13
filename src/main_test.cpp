@@ -204,7 +204,8 @@ TEST_CASE("addition opertor"){
 }
 
 TEST_CASE("cos test"){
-  REQUIRE();
+  REQUIRE(cos(complex(2,-2)).real == -1.56563);
+  REQUIRE(cos(complex(2,2)).imaginary == -3.29789);
 }
 // */
 #endif // ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
