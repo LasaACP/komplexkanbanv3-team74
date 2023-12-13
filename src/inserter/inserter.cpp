@@ -7,4 +7,5 @@ ostream& operator<<(ostream& out, const complex& c) {
   } else if (c.imaginary < 0) {
     out << c.real << "-" << -c.imaginary << "i";
   return out;
+  }
 }
