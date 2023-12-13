@@ -26,41 +26,58 @@ bool complex::operator!=(const complex& c) const {
 }
 
 complex complex::operator+= (const complex& c) {
-  return c;
+  real += c.real;
+  imaginary += c.imaginary;
+  return *this;
 }
+
 complex complex::operator-= (const complex& c) {
-  return c;
+  real -= c.real;
+  imaginary -= c.imaginary;
+  return *this;
 }
 
 complex complex::operator*=(const complex& c) {
-  return c;
+  double tempReal = real;
+  double tempImaginary = imaginary;
+  real = (tempReal*c.real) - (tempImaginary * c.imaginary);
+  imaginary = (tempReal*c.imaginary) + (tempImaginary*c.real);
+  return *this;
 }
 complex complex::operator/=(const complex& c) {
-  return c;
+  double tempReal = real;
+  double tempImaginary = imaginary;
+  real = (tempReal*c.real) + (tempImaginary * c.imaginary);
+  tempReal /= pow(c.real, 2) + pow(c.imaginary, 2);
+  imaginary = (c.real*tempImaginary) - (c.imaginary*tempReal);
+  tempImaginary /= pow(c.real, 2) + pow(c.imaginary, 2);
+  return *this;
 }
 
 complex complex::operator/ (const complex& c) {
-  return c;
+  complex temp;
+  double tempReal = (real*c.real) + (imaginary * c.imaginary);
+  tempReal /= pow(c.real, 2) + pow(c.imaginary, 2);
+  double tempImaginary = (c.real*imaginary) - (c.imaginary*real);
+  tempImaginary /= pow(c.real, 2) + pow(c.imaginary, 2);
+  temp.real = tempReal;
+  temp.imaginary = tempImaginary;
+  return temp;
 }
 
 complex complex::operator+(const complex& c)const {
   double r = c.real + real;
   double i = c.imaginary + imaginary;
-  complex e = complex(r, i);
-  return e;
+  return complex(r, i);
 }
 
 void complex::operator= (const complex& c){
-  /* real = a.real;
-    imaginary = a.imaginary;
-    return *this;
-    */
+  real = c.real;
+  imaginary = c.imaginary;
 }
 
 complex complex::operator-(const complex& c) {
-  return c;
-  /* double b = real - a.real;
-    double c = imaginary - a.imaginary;
-    complex *eg = new complex(b, c);
-    return *e; */
+  double r = real - c.real;
+  double i = imaginary - c.imaginary;
+  return complex(r, i);
 }
