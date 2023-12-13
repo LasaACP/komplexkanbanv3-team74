@@ -9,4 +9,4 @@ add_executable(MyProgram main_test.cpp complex.h abs/abs.h acos/acos.h arg/arg.h
 
 target_link_libraries(MyProgram PRIVATE MyLibrary)
 target_link_libraries(MyProgram PRIVATE m)
-target_link_libraries(MyProgram PRIVATE /home/runner/KomplexKanban-V3-JustinWickelgre/komplexkanbanv3-team74/tests/catch_amalgamated.o) # change KomplexKanban-V3-JustinWickelgre to your repl name
+target_link_libraries(MyProgram PRIVATE /home/runner/KomplexKanban-V3-ved4/komplexkanbanv3-team74/tests/catch_amalgamated.o) # change KomplexKanban-V3-JustinWickelgren to your repl name
