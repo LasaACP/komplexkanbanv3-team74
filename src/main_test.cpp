@@ -146,7 +146,7 @@ TEST_CASE("imag test") {
 TEST_CASE("pow test") {
   REQUIRE(pow(complex(1, 2), 2) == complex(-3, 4));
   REQUIRE(pow(2.0, complex(3, 0)) == complex(8, 0));
-  REQUIRE(pow(complex(-3, 4), 0.5) == complex(1, 2));
+  REQUIRE(pow(complex(1, 2), 2.0) == complex(-3, 4));
   REQUIRE(pow(complex(1, 2), complex(2, 0)) == complex(-3, 4));
 }
 

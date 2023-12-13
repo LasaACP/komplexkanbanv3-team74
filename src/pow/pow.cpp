@@ -24,5 +24,5 @@ complex pow(const complex b, double exp) {
 
 complex pow(const complex b, const complex exp1) {
   double r = sqrt(b.real*b.real + b.imaginary*b.imaginary);
-  return pow(2.718281828459045, (complex(exp1.real, exp1.imaginary) * log(r)) + (complex(0,1) * exp1 * arg(b))) * pow(r, exp1);
+  return pow(2.718281828459045, (complex(exp1.real, exp1.imaginary) * log(r)) + (complex(0,1) * exp1 * arg(b)));
 }
