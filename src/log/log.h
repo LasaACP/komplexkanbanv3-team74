@@ -1,3 +1,3 @@
 class complex;
 
-complex log(const complex c);
+complex log(complex c);

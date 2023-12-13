@@ -204,7 +204,7 @@ TEST_CASE("addition opertor"){
 }
 
 TEST_CASE("cos test"){
-  REQUIRE();
+  
 }
 // */
 #endif // ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
