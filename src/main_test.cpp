@@ -205,10 +205,14 @@ TEST_CASE("addition opertor"){
 
 TEST_CASE("cos test"){
 
-  REQUIRE(cos(complex(2,-2)).real == -1.56563);
-  REQUIRE(cos(complex(2,2)).imaginary == -3.29789);
+  REQUIRE(cos(complex(2,-2)).real == -1.5656258353);
+  REQUIRE(cos(complex(2,-2)).imaginary == -3.29789);
 }
-  // REQUIRE();
+
+TEST_CASE("cosh test"){
+  REQUIRE(cosh(complex(2,-2)).real == -1.56563);
+  REQUIRE(cosh(complex(2,-2)).imaginary == -3.29789);
+}  // REQUIRE();
 
 // */
 #endif // ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
