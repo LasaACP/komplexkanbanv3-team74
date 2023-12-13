@@ -4,7 +4,7 @@
 #include "../complex.h"
 #include <cmath>
 
-complex log(complex c) {
+complex log(const complex c) {
   double x = abs(c);
   double y = arg(c);
   return complex(log(x), y);
