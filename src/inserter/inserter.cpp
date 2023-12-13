@@ -10,4 +10,3 @@ ostream& operator<<(ostream& out, const complex& c) {
   }
   return out;
   }
-}
