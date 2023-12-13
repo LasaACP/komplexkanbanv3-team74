@@ -1,4 +1,5 @@
 #include "complex.h"
+#include <cmath>
 
 complex::complex(){real = 0; imaginary = 0;}
 complex::complex(double r, double i) {real = r; imaginary = i;}
@@ -13,7 +14,11 @@ complex complex::operator* (const complex& c) {
 }
 
 bool complex::operator==(const complex& c) const {
-  return (real == c.real && imaginary == c.imaginary);
+  double r1 = std::round(real*1000000)/1000000;
+  double r2 = std::round(c.real*1000000)/1000000;
+  double i1 = std::round(imaginary*1000000)/1000000;
+  double i2 = std::round(c.imaginary*1000000)/1000000;
+  return ((r1==r2) && (i1==i2));
 }
 
 bool complex::operator!=(const complex& c) const {
