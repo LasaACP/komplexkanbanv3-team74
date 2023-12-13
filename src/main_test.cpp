@@ -186,5 +186,15 @@ TEST_CASE("divison operator") {
   REQUIRE((complex(1, 2) / complex(-2, 1)) == complex(0, -1));
 }
 
+TEST_CASE("equal operator"){
+  complex c = complex(3,3);
+  complex x = complex(4,4);
+  REQUIRE(c == complex(3,3));
+  REQUIRE(x == complex(4,4));
+}
+
+TEST_CASE("subtraction operator"){
+  
+}
 // */
 #endif // ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
