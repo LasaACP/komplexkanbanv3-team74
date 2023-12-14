@@ -1,7 +1,25 @@
 #include <cstdlib>
+#include "abs/abs.h"
+#include "acos/acos.h"
+#include "arg/arg.h"
+#include "asin/asin.h"
+#include "atan/atan.h"
+#include "complex.h"
+#include "conj/conj.h"
+#include "cos/cos.h"
+#include "cosh/cosh.h"
+#include "exp/exp.h"
+#include "imag/imag.h"
+#include "inserter/inserter.h"
+#include "log/log.h"
+#include "log10/log10.h"
+#include "norm/norm.h"
+#include "pow/pow.h"
+#include "real/real.h"
+#include "sin/sin.h"
+#include "sqrt/sqrt.h"
+#include <cmath>
 #include <iostream>
-#include "Complex.h"
-#include "fac.h"
 
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
@@ -13,7 +31,7 @@ int main () {
 
     std::cout << "Factorial test " << Factorial(5) << std::endl;
 
-    Complex a(5.0,6.0),b;
+    complex a(5.0,6.0),b;
 
     std::cout << "Enter b: ";
     std::cin >> b;
@@ -30,9 +48,9 @@ int main () {
     std::cout << "abs of a = " << abs(a) << "\n";
     std::cout << "exp(a) = " << exp(a) << "\n";
 
-    Complex j = Complex(0.0,1.0);
-    Complex z1 = 1+2*j;
-    Complex z2 = 2+3*j;
+    complex j = complex(0.0,1.0);
+    complex z1 = j*2 + 1;
+    complex z2 = j*3 + 2;
 
     z1 += z2;
 
@@ -46,7 +64,7 @@ int main () {
     cout << "The sin is: " << sin(z1) << "\n";
 
     /* other function testing */
-    /*
+  /*
     cout << "\n------ OTHER FUNCTION TESTING ------\n\n";
     cout << "The real part is: " << real(a) << "\n";
     cout << "The imaginary part is: " << imag(a) << "\n";
@@ -78,5 +96,5 @@ int main () {
     cout << "The asech is: " << asech(a) << "\n";
     cout << "The acoth is: " << acoth(a) << "\n";
     cout << "The complex number rotated by pi/6 radians is: " << rotate(a, PI/6) << "\n";
-    */
+  */
 }
