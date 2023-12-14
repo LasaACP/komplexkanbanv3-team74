@@ -1,6 +1,8 @@
 # Build dir
 build/
 
+replit.nix
+
 # Prerequisites
 *.d
 
