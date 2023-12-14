@@ -13,6 +13,10 @@ complex complex::operator* (const complex& c) {
     return temp;
 }
 
+complex complex::operator* (const double& n) {
+  return complex(real*n, imaginary*n);
+}
+
 bool complex::operator==(const complex& c) const {
   double r1 = std::round(real*1000000)/1000000;
   double r2 = std::round(c.real*1000000)/1000000;
@@ -69,6 +73,10 @@ complex complex::operator+(const complex& c)const {
   double r = c.real + real;
   double i = c.imaginary + imaginary;
   return complex(r, i);
+}
+
+complex complex::operator+(const double& n) {
+  return complex(real+n, imaginary);
 }
 
 void complex::operator= (const complex& c){
